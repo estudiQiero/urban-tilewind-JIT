@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./build/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "posts": "^0.0.1",
+    "vite": "^2.5.3"
+  }
+}

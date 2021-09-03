@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ----------------------- */
+/* Códi propi per Miq 2021 */
+/* ----------------------- */
+@font-face {
+  font-family: 'Dotrice Regular';
+  src: local("Dotrice Regular"), url("fonts/Dotrice-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  cursor: default;
+  min-width: 320px;
+  transition: .5s all ease-in-out;
+  background-color: #F3F4F6;
+}
+
+body h1,
+body p,
+body li {
+  color: #374151;
+}
+
+body #logo-dia {
+  display: block;
+}
+
+body #logo-noche {
+  display: none;
+}
+
+body #skyline-mobile path,
+body #skyline-mobile rect,
+body #skyline path,
+body #skyline rect {
+  fill: #374151;
+}
+
+body #skyline #grup-development #fondo-development,
+body #skyline-mobile #grup-development #fondo-development {
+  fill: transparent;
+}
+
+body #skyline #grup-development #development,
+body #skyline-mobile #grup-development #development {
+  fill: #374151;
+}
+
+body #skyline #grup-advisors #fondo-advisors,
+body #skyline-mobile #grup-advisors #fondo-advisors {
+  fill: transparent;
+}
+
+body #skyline #grup-advisors #advisors,
+body #skyline-mobile #grup-advisors #advisors {
+  fill: #374151;
+}
+
+body #skyline #grup-lawyers #fondo-lawyers,
+body #skyline-mobile #grup-lawyers #fondo-lawyers {
+  fill: transparent;
+}
+
+body #skyline #grup-lawyers #lawyers,
+body #skyline-mobile #grup-lawyers #lawyers {
+  fill: #374151;
+}
+
+body #skyline #grup-design #fondo-design,
+body #skyline-mobile #grup-design #fondo-design {
+  fill: transparent;
+}
+
+body #skyline #grup-design #design,
+body #skyline-mobile #grup-design #design {
+  fill: #374151;
+}
+
+body #skyline #grup-architecture #fondo-architecture,
+body #skyline-mobile #grup-architecture #fondo-architecture {
+  fill: transparent;
+}
+
+body #skyline #grup-architecture #architecture,
+body #skyline-mobile #grup-architecture #architecture {
+  fill: #374151;
+}
+
+body #skyline #grup-engineer #fondo-engineer,
+body #skyline-mobile #grup-engineer #fondo-engineer {
+  fill: transparent;
+}
+
+body #skyline #grup-engineer #engineer,
+body #skyline-mobile #grup-engineer #engineer {
+  fill: #374151;
+}
+
+body #skyline #grup-building #fondo-building,
+body #skyline-mobile #grup-building #fondo-building {
+  fill: transparent;
+}
+
+body #skyline #grup-building #building,
+body #skyline-mobile #grup-building #building {
+  fill: #374151;
+}
+
+body #skyline #grup-technology #fondo-technology,
+body #skyline-mobile #grup-technology #fondo-technology {
+  fill: transparent;
+}
+
+body #skyline #grup-technology #technology,
+body #skyline-mobile #grup-technology #technology {
+  fill: #374151;
+}
+
+#contenedor header,
+#contenedor footer {
+  flex-grow: 1;
+}
+
+#contenedor main {
+  flex-grow: 2 !important;
+}
+
+#contenedor li,
+#contenedor p {
+  font-family: 'Dotrice Regular';
+}
+
+#contenedor li {
+  line-height: 3rem;
+}
+
+#contenedor h1 {
+  font-family: beloved-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#contenedor #botonDiaNoche {
+  cursor: pointer;
+  background-color: #374151;
+  border: #F3F4F6 2px solid;
+}
+
+#contenedor #botonDiaNoche #botonRedondo {
+  background-color: #F3F4F6;
+  border: #374151 2px solid;
+}
+
+#contenedor #botonDiaNoche #botonRedondo .texturaBoton {
+  background-color: #374151;
+  border-radius: 50px;
+}
+
+#contenedor #conceptos {
+  cursor: default;
+}
+
+#contenedor #iconInfo svg {
+  stroke: #374151;
+  transition: .25s all ease-in-out;
+}
+
+#contenedor #iconInfo svg:hover {
+  transform: scale(1.2);
+}
+
+#contenedor .spectrum {
+  background-color: #e53012;
+}
+
+#contenedor .spectrum #sp3 {
+  background-color: #fbb934;
+}
+
+#contenedor .spectrum #sp4 {
+  background-color: #c25299;
+}
+
+#contenedor .spectrum #sp5 {
+  background-color: #26a737;
+}
+
+#contenedor .spectrum #sp6 {
+  background-color: #34bef0;
+}
+
+#contenedor .spectrum #sp7 {
+  background-color: #f3e600;
+}
+
+#contenedor .spectrum #sp8 {
+  background-color: #a3c617;
+}
+
+#contenedor .spectrum #sp9 {
+  background-color: #12709a;
+}
+
+#contenedor #firma {
+  background-color: #E5E7EB;
+  color: #9CA3AF;
+  font-size: .7rem;
+}
+
+#contenedor #mailsvg #TEXT path {
+  fill: #e53012;
+}
+
+#ventana-modal {
+  display: none;
+  background-color: rgba(55, 65, 81, 0.4);
+}
+
+#ventana-modal #contInfo {
+  z-index: 9000;
+  background-color: #F3F4F6;
+  border: 2px #374151 solid;
+  box-shadow: 0px 14px 20px rgba(68, 68, 68, 0.5);
+}
+
+#ventana-modal #contInfo p,
+#ventana-modal #contInfo h3 {
+  color: #374151;
+}
+
+#ventana-modal #contInfo button {
+  border: 2px #374151 solid;
+  color: #374151;
+  background-color: #F3F4F6;
+  transition: .25s all ease-in-out;
+}
+
+#ventana-modal #contInfo button:hover {
+  background-color: #E5E7EB;
+}
+
+body.noche {
+  background-color: #374151;
+}
+
+body.noche #logo-dia {
+  display: none;
+}
+
+body.noche #logo-noche {
+  display: block;
+}
+
+body.noche h1,
+body.noche p,
+body.noche li {
+  color: #F3F4F6;
+}
+
+body.noche #skyline-mobile path,
+body.noche #skyline-mobile rect,
+body.noche #skyline-mobile polygon,
+body.noche #skyline path,
+body.noche #skyline rect,
+body.noche #skyline polygon {
+  fill: #F3F4F6;
+}
+
+body.noche #development,
+body.noche #advisors,
+body.noche #lawyers,
+body.noche #design,
+body.noche #architecture,
+body.noche #engineer,
+body.noche #building,
+body.noche #technology {
+  fill: #F3F4F6 !important;
+}
+
+body.noche #fondo-development,
+body.noche #fondo-advisors,
+body.noche #fondo-lawyers,
+body.noche #fondo-design,
+body.noche #fondo-architecture,
+body.noche #fondo-engineer,
+body.noche #fondo-building,
+body.noche #fondo-technology {
+  fill: transparent !important;
+}
+
+body.noche #botonDiaNoche {
+  transition: .25s all ease-in-out;
+  justify-content: flex-end;
+}
+
+body.noche #grup-development #development {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-development:hover #development {
+  fill: #e53012 !important;
+}
+
+body.noche #grup-advisors #advisors {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-advisors:hover #advisors {
+  fill: #fbb934 !important;
+}
+
+body.noche #grup-lawyers #lawyers {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-lawyers:hover #lawyers {
+  fill: #c25299 !important;
+}
+
+body.noche #grup-design #design {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-design:hover #design rect,
+body.noche #grup-design:hover #design path,
+body.noche #grup-design:hover #design polygon {
+  fill: #26a737;
+}
+
+body.noche #grup-architecture #architecture {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-architecture:hover #architecture {
+  fill: #34bef0 !important;
+}
+
+body.noche #grup-engineer #engineer {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-engineer:hover #engineer {
+  fill: #f3e600 !important;
+}
+
+body.noche #grup-building #building {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-building:hover #building {
+  fill: #a3c617 !important;
+}
+
+body.noche .building-txt {
+  color: #a3c617;
+}
+
+body.noche #grup-technology #technology {
+  transition: .25s all ease-in-out;
+}
+
+body.noche #grup-technology:hover #technology {
+  fill: #12709a !important;
+}
+
+body.noche #iconInfo svg {
+  stroke: #F3F4F6 !important;
+}
+
+body.noche #firma {
+  background-color: #1F2937 !important;
+}
+
+body.noche #ventana-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+body.noche #ventana-modal #contInfo {
+  background-color: #374151;
+  border: 2px #F3F4F6 solid;
+  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.noche #ventana-modal #contInfo p,
+body.noche #ventana-modal #contInfo h3 {
+  color: #F3F4F6;
+}
+
+body.noche #ventana-modal #contInfo button {
+  border: 2px #F3F4F6 solid;
+  color: #F3F4F6;
+  background-color: #374151;
+  transition: .25s all ease-in-out;
+}
+
+body.noche #ventana-modal #contInfo button:hover {
+  background-color: #1F2937;
+}

@@ -1,0 +1,478 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// COLORES
+$blanco: #F3F4F6;
+$gris: #9CA3AF;
+$grisclaro: #E5E7EB;
+$negro: #374151;
+$negro-oscuro: #1F2937;
+$rojo: #e53012;
+$naranja: #fbb934;
+$grana: #c25299;
+$verde: #26a737;
+$azul: #34bef0;
+$amarillo: #f3e600;
+$verdeoliva: #a3c617;
+$lapislazuli: #12709a;
+
+// MIXINS
+@mixin coloresEdif() {
+    transition: .25s all ease-in-out;
+}
+
+// FONT
+@font-face {
+    font-family: 'Dotrice Regular';
+    src: local('Dotrice Regular'), url('fonts/Dotrice-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// GENERICOS
+body {
+    cursor: default;
+    min-width: 320px;
+    transition: .5s all ease-in-out;
+    background-color: $blanco;
+
+    h1,
+    p,
+    li {
+        color: $negro;
+    }
+
+    #logo-dia {
+        display: block;
+    }
+
+    #logo-noche {
+        display: none;
+    }
+
+    #skyline-mobile,
+    #skyline {
+
+        path,
+        rect {
+            fill: $negro;
+        }
+    }
+
+    #skyline,
+    #skyline-mobile {
+        #grup-development {
+            #fondo-development {
+                fill: transparent;
+            }
+
+            #development {
+                fill: $negro;
+            }
+        }
+
+        #grup-advisors {
+            #fondo-advisors {
+                fill: transparent;
+            }
+
+            #advisors {
+                fill: $negro;
+            }
+        }
+
+        #grup-lawyers {
+            #fondo-lawyers {
+                fill: transparent;
+            }
+
+            #lawyers {
+                fill: $negro;
+            }
+        }
+
+        #grup-design {
+            #fondo-design {
+                fill: transparent;
+            }
+
+            #design {
+                fill: $negro;
+            }
+        }
+
+        #grup-architecture {
+            #fondo-architecture {
+                fill: transparent;
+            }
+
+            #architecture {
+                fill: $negro;
+            }
+        }
+
+        #grup-engineer {
+            #fondo-engineer {
+                fill: transparent;
+            }
+
+            #engineer {
+                fill: $negro;
+            }
+        }
+
+        #grup-building {
+            #fondo-building {
+                fill: transparent;
+            }
+
+            #building {
+                fill: $negro;
+            }
+        }
+
+        #grup-technology {
+            #fondo-technology {
+                fill: transparent;
+            }
+
+            #technology {
+                fill: $negro;
+            }
+        }
+    }
+}
+
+#contenedor {
+
+    header,
+    footer {
+        flex-grow: 1;
+    }
+
+    main {
+        flex-grow: 2 !important;
+    }
+
+    li,
+    p {
+        font-family: 'Dotrice Regular';
+    }
+
+    li {
+        line-height: 3rem;
+    }
+
+    h1 {
+        font-family: beloved-script, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #botonDiaNoche {
+        cursor: pointer; // mano
+        background-color: $negro;
+        border: $blanco 2px solid;
+
+        #botonRedondo {
+            background-color: $blanco;
+            border: $negro 2px solid;
+            .texturaBoton {
+                background-color: $negro;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    #conceptos {
+        cursor: default; // flecha
+    }
+
+    #iconInfo {
+        svg {
+            stroke: $negro;
+            transition: .25s all ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .spectrum {
+        background-color: $rojo;
+
+        #sp3 {
+            background-color: $naranja; 
+        }
+        #sp4 {
+            background-color: $grana; 
+        }
+        #sp5 {
+            background-color: $verde; 
+        }
+        #sp6 {
+            background-color: $azul; 
+        }
+        #sp7 {
+            background-color: $amarillo; 
+        }
+        #sp8 {
+            background-color: $verdeoliva; 
+        }
+        #sp9 {
+            background-color: $lapislazuli; 
+        }
+    }
+
+    #firma {
+        background-color: $grisclaro;
+        color: $gris;
+        font-size: .7rem; // no encontraba un numero tan peque en TailwindCSS
+    }
+
+    #mailsvg {
+        #TEXT {
+            path {
+                fill: $rojo;
+            }
+        }
+    }
+}
+
+// MODAL
+#ventana-modal {
+    display: none;
+    background-color: rgba( $negro, .4 );
+
+    #contInfo {
+        z-index: 9000;
+        background-color: $blanco;
+        border: 2px $negro solid;
+        box-shadow: 0px 14px 20px rgba(68, 68, 68, 0.5);
+        p,
+        h3 {
+            color: $negro;
+        }
+
+        button {
+            border: 2px $negro solid;
+            color: $negro;
+            background-color: $blanco;
+            transition: .25s all ease-in-out;
+            &:hover {
+                background-color: $grisclaro;
+            }
+        }
+    }
+}
+
+// clases para NOCHE
+// sustituir en body, la clase "dia" por "noche".
+
+body {
+    &.noche {
+        background-color: $negro;
+
+        #logo-dia {
+            display: none;
+        }
+
+        #logo-noche {
+            display: block;
+        }
+
+        h1,
+        p,
+        li {
+            color: $blanco;
+        }
+
+        #skyline-mobile,
+        #skyline {
+
+            path,
+            rect,
+            polygon {
+                fill: $blanco;
+            }
+        }
+
+        #development,
+        #advisors,
+        #lawyers,
+        #design,
+        #architecture,
+        #engineer,
+        #building,
+        #technology {
+            fill: $blanco !important;
+        }
+
+        #fondo-development,
+        #fondo-advisors,
+        #fondo-lawyers,
+        #fondo-design,
+        #fondo-architecture,
+        #fondo-engineer,
+        #fondo-building,
+        #fondo-technology {
+            fill: transparent !important;
+        }
+
+        #botonDiaNoche {
+            transition: .25s all ease-in-out;
+            justify-content: flex-end;
+        }
+
+        // development
+        #grup-development {
+            #development {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #development {
+                    fill: $rojo !important;
+                }
+            }
+        }
+
+        // advisors
+        #grup-advisors {
+            #advisors {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #advisors {
+                    fill: $naranja !important;
+                }
+            }
+        }
+
+        // lawyers
+        #grup-lawyers {
+            #lawyers {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #lawyers {
+                    fill: $grana !important;
+                }
+            }
+        }
+
+        // design
+        #grup-design {
+            #design {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #design {
+
+                    rect,
+                    path,
+                    polygon {
+                        fill: $verde;
+                    }
+
+                }
+            }
+        }
+
+        // architecture
+        #grup-architecture {
+            #architecture {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #architecture {
+                    fill: $azul !important;
+                }
+            }
+        }
+
+        // engineer
+        #grup-engineer {
+            #engineer {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #engineer {
+                    fill: $amarillo !important;
+                }
+            }
+        }
+
+        // building
+        #grup-building {
+            #building {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #building {
+                    fill: $verdeoliva !important;
+                }
+            }
+        }
+
+        .building-txt {
+            color: $verdeoliva;
+        }
+
+        // technology
+        #grup-technology {
+            #technology {
+                @include coloresEdif();
+            }
+
+            &:hover {
+                #technology {
+                    fill: $lapislazuli !important;
+                }
+            }
+        }
+
+        #iconInfo {
+            svg {
+                stroke: $blanco !important;
+            }
+        }
+
+        // FIRMA
+        #firma {
+            background-color: $negro-oscuro !important;
+        }
+
+        #ventana-modal {  
+            background-color: rgba(0, 0, 0, 0.4);     
+            #contInfo {
+                background-color: $negro;
+                border: 2px $blanco solid;
+                box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.5);
+                p,
+                h3 {
+                    color: $blanco;
+                }
+        
+                button {
+                    border: 2px $blanco solid;
+                    color: $blanco;
+                    background-color: $negro;
+                    transition: .25s all ease-in-out;
+                    &:hover {
+                        background-color: $negro-oscuro;
+                    }
+                }
+            }
+        }
+    }
+}
