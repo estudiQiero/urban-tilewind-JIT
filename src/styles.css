@@ -1,10 +1,6 @@
-@charset "UTF-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* ----------------------- */
-/* Códi propi per Miq 2021 */
-/* ----------------------- */
 @font-face {
   font-family: 'Dotrice Regular';
   src: local("Dotrice Regular"), url("fonts/Dotrice-Regular.woff") format("woff");
@@ -369,6 +365,10 @@ body.noche #grup-technology:hover #technology {
 
 body.noche #iconInfo svg {
   stroke: #F3F4F6 !important;
+}
+
+body.noche .cls-1 {
+  fill: #a3c617 !important;
 }
 
 body.noche #firma {
