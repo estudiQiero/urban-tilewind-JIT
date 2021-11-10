@@ -1,20 +1,21 @@
 function cambiarDiaNoche() {
 
-    let botonModif = document.body;
+    let botonModif = document.contenedor;
     botonModif.classList.toggle('noche');
 }
 
-function mostrarModal() {
+// Hecha en Vue
+// function mostrarModal() {
 
-    let botonModif = document.getElementById('ventana-modal');
-    botonModif.style.display='block';
-}
+//     let botonModif = document.getElementById('ventana-modal');
+//     botonModif.style.display='block';
+// }
 
-function ocultarModal() {
+// function ocultarModal() {
 
-    let botonModif = document.getElementById('ventana-modal');
-    botonModif.style.display='none';
-}
+//     let botonModif = document.getElementById('ventana-modal');
+//     botonModif.style.display='none';
+// }
 
 // const grupEdif = document.getElementById("grup-building");
 // const txtAfectado = document.getElementById("txt-building");

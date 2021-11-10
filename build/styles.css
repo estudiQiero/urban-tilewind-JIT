@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.9 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -822,16 +822,6 @@ video {
   max-width: 1280px;
 }
 
-.translate-y-4 {
-  --tw-translate-y: 1rem;
-  transform: var(--tw-transform);
-}
-
-.translate-y-0 {
-  --tw-translate-y: 0px;
-  transform: var(--tw-transform);
-}
-
 .transform {
   transform: var(--tw-transform);
 }
@@ -996,14 +986,6 @@ video {
   letter-spacing: 0em;
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
-.opacity-100 {
-  opacity: 1;
-}
-
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1024,22 +1006,6 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
-}
-
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 @font-face {
@@ -1283,165 +1249,197 @@ body #skyline-mobile #grup-technology #technology {
   background-color: #E5E7EB;
 }
 
-body.noche {
+#contenedor.noche {
   background-color: #374151;
 }
 
-body.noche #logo-dia {
+#contenedor.noche #logo-dia {
   display: none;
 }
 
-body.noche #logo-noche {
+#contenedor.noche #logo-noche {
   display: block;
 }
 
-body.noche h1,
-body.noche p,
-body.noche li {
+#contenedor.noche h1,
+#contenedor.noche p,
+#contenedor.noche li {
   color: #F3F4F6;
 }
 
-body.noche #skyline-mobile path,
-body.noche #skyline-mobile rect,
-body.noche #skyline-mobile polygon,
-body.noche #skyline path,
-body.noche #skyline rect,
-body.noche #skyline polygon {
+#contenedor.noche #skyline-mobile path,
+#contenedor.noche #skyline-mobile rect,
+#contenedor.noche #skyline-mobile polygon,
+#contenedor.noche #skyline path,
+#contenedor.noche #skyline rect,
+#contenedor.noche #skyline polygon {
   fill: #F3F4F6;
 }
 
-body.noche #development,
-body.noche #advisors,
-body.noche #lawyers,
-body.noche #design,
-body.noche #architecture,
-body.noche #engineer,
-body.noche #building,
-body.noche #technology {
+#contenedor.noche #development,
+#contenedor.noche #advisors,
+#contenedor.noche #lawyers,
+#contenedor.noche #design,
+#contenedor.noche #architecture,
+#contenedor.noche #engineer,
+#contenedor.noche #building,
+#contenedor.noche #technology {
   fill: #F3F4F6 !important;
 }
 
-body.noche #fondo-development,
-body.noche #fondo-advisors,
-body.noche #fondo-lawyers,
-body.noche #fondo-design,
-body.noche #fondo-architecture,
-body.noche #fondo-engineer,
-body.noche #fondo-building,
-body.noche #fondo-technology {
+#contenedor.noche #fondo-development,
+#contenedor.noche #fondo-advisors,
+#contenedor.noche #fondo-lawyers,
+#contenedor.noche #fondo-design,
+#contenedor.noche #fondo-architecture,
+#contenedor.noche #fondo-engineer,
+#contenedor.noche #fondo-building,
+#contenedor.noche #fondo-technology {
   fill: transparent !important;
 }
 
-body.noche #botonDiaNoche {
+#contenedor.noche #botonDiaNoche {
   transition: .25s all ease-in-out;
   justify-content: flex-end;
 }
 
-body.noche #grup-development #development {
+#contenedor.noche #grup-development #development {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-development:hover #development {
+#contenedor.noche #grup-development:hover #development {
   fill: #e53012 !important;
 }
 
-body.noche #grup-advisors #advisors {
+#contenedor.noche #txt-development:hover {
+  color: #e53012;
+}
+
+#contenedor.noche #grup-advisors #advisors {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-advisors:hover #advisors {
+#contenedor.noche #grup-advisors:hover #advisors {
   fill: #fbb934 !important;
 }
 
-body.noche #grup-lawyers #lawyers {
+#contenedor.noche #txt-advisors:hover {
+  color: #fbb934;
+}
+
+#contenedor.noche #grup-lawyers #lawyers {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-lawyers:hover #lawyers {
+#contenedor.noche #grup-lawyers:hover #lawyers {
   fill: #c25299 !important;
 }
 
-body.noche #grup-design #design {
+#contenedor.noche #txt-lawyers:hover {
+  color: #c25299;
+}
+
+#contenedor.noche #grup-design #design {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-design:hover #design rect,
-body.noche #grup-design:hover #design path,
-body.noche #grup-design:hover #design polygon {
+#contenedor.noche #grup-design:hover #design rect,
+#contenedor.noche #grup-design:hover #design path,
+#contenedor.noche #grup-design:hover #design polygon {
   fill: #26a737;
 }
 
-body.noche #grup-architecture #architecture {
+#contenedor.noche #txt-design:hover {
+  color: #26a737;
+}
+
+#contenedor.noche #grup-architecture #architecture {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-architecture:hover #architecture {
+#contenedor.noche #grup-architecture:hover #architecture {
   fill: #34bef0 !important;
 }
 
-body.noche #grup-engineer #engineer {
+#contenedor.noche #txt-architecture:hover {
+  color: #34bef0;
+}
+
+#contenedor.noche #grup-engineer #engineer {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-engineer:hover #engineer {
+#contenedor.noche #grup-engineer:hover #engineer {
   fill: #f3e600 !important;
 }
 
-body.noche #grup-building #building {
+#contenedor.noche #txt-engineer:hover {
+  color: #f3e600;
+}
+
+#contenedor.noche #grup-building #building {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-building:hover #building {
+#contenedor.noche #grup-building:hover #building {
   fill: #a3c617 !important;
 }
 
-body.noche .building-txt {
+#contenedor.noche #txt-building:hover {
   color: #a3c617;
 }
 
-body.noche #grup-technology #technology {
+#contenedor.noche .building-txt {
+  color: #a3c617;
+}
+
+#contenedor.noche #grup-technology #technology {
   transition: .25s all ease-in-out;
 }
 
-body.noche #grup-technology:hover #technology {
+#contenedor.noche #grup-technology:hover #technology {
   fill: #12709a !important;
 }
 
-body.noche #iconInfo svg {
+#contenedor.noche #txt-technology:hover {
+  color: #12709a;
+}
+
+#contenedor.noche #iconInfo svg {
   stroke: #F3F4F6 !important;
 }
 
-body.noche .cls-1 {
+#contenedor.noche .cls-1 {
   fill: #a3c617 !important;
 }
 
-body.noche #firma {
+#contenedor.noche #firma {
   background-color: #1F2937 !important;
 }
 
-body.noche #ventana-modal {
+#contenedor.noche #ventana-modal {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-body.noche #ventana-modal #contInfo {
+#contenedor.noche #ventana-modal #contInfo {
   background-color: #374151;
   border: 2px #F3F4F6 solid;
   box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.5);
 }
 
-body.noche #ventana-modal #contInfo p,
-body.noche #ventana-modal #contInfo h3 {
+#contenedor.noche #ventana-modal #contInfo p,
+#contenedor.noche #ventana-modal #contInfo h3 {
   color: #F3F4F6;
 }
 
-body.noche #ventana-modal #contInfo button {
+#contenedor.noche #ventana-modal #contInfo button {
   border: 2px #F3F4F6 solid;
   color: #F3F4F6;
   background-color: #374151;
   transition: .25s all ease-in-out;
 }
 
-body.noche #ventana-modal #contInfo button:hover {
+#contenedor.noche #ventana-modal #contInfo button:hover {
   background-color: #1F2937;
 }
 
@@ -1504,23 +1502,6 @@ body.noche #ventana-modal #contInfo button:hover {
 
   .sm\:max-w-lg {
     max-width: 32rem;
-  }
-
-  .sm\:translate-y-0 {
-    --tw-translate-y: 0px;
-    transform: var(--tw-transform);
-  }
-
-  .sm\:scale-95 {
-    --tw-scale-x: .95;
-    --tw-scale-y: .95;
-    transform: var(--tw-transform);
-  }
-
-  .sm\:scale-100 {
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    transform: var(--tw-transform);
   }
 
   .sm\:flex-row-reverse {
